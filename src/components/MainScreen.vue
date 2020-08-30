@@ -9,6 +9,7 @@
             :elevation="hover ? 12 : 2"
           >
             <v-responsive :aspect-ratio="1 / 1">
+              <v-img src="@assets/bg1.png"/>
               <v-card-text>
                 OPA
               </v-card-text>
