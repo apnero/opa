@@ -1,5 +1,80 @@
 <template>
   <v-container fluid class="pa-0">
+    <v-app-bar app
+      fixed
+      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+      prominent
+      dark
+      shrink-on-scroll
+    >
+      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <!-- <v-toolbar-title>OPA Marketing</v-toolbar-title> -->
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>mdi-facebook</v-icon>
+      </v-btn>
+      <v-btn href="https://instagram.com/nai_brito_ct" icon>
+        <v-icon>mdi-instagram</v-icon>
+      </v-btn>
+      <v-btn icon href="sms:+14752189321">
+        <v-icon>mdi-comment-text</v-icon>
+      </v-btn>
+      <v-btn href="mailto:opamarketingdanbury@gmail.com" icon>
+        <v-icon>mdi-email</v-icon>
+      </v-btn>
+    </v-app-bar>
+    <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      dark
+      src="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
+      temporary
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item class="px-2">
+            <v-list-item-avatar>
+              <v-img src="https://randomuser.me/api/portraits/women/75.jpg"></v-img>
+            </v-list-item-avatar>
+          </v-list-item>
+<v-subheader>REPORTS</v-subheader>
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>All Products</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-information</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>About</v-list-item-title>
+          </v-list-item>
+<v-divider></v-divider>
+<v-subheader>PART2</v-subheader>
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>More Products</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-information</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>More </v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>    
     <Panels :language="language" />
     <v-bottom-navigation dark style="z-index:20" height="32px" grow app>
       <v-btn @click="language = 0">
@@ -22,6 +97,8 @@ export default {
   data() {
     return {
       language: 0,
+      drawer: false,
+      group: [],
     };
   },
   components: {
