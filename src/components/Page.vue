@@ -1,32 +1,33 @@
 <template>
-  <v-card v-if="bgColorAndImage"
+  <v-card v-if="card"
     tile
     @click="backToPanelView"
     height="100vh"
-    :color="bgColorAndImage.color"
+    :color="card.color"
   >
     <v-row align="center">
       <v-col>
         <v-img
-          :src="bgColorAndImage.imageObj.image"
+          :src="card.image"
           contain
         />
       </v-col>
-      <v-col><h1 class="text-center">{{ bgColorAndImage.imageObj.text }}</h1></v-col>
+      <v-col><h1 class="text-center">{{ card.text[language] }}</h1></v-col>
     </v-row>
   </v-card>
 </template>
 
 <script>
-import colors from "@/assets/crayola.json";
-import imageArray from "@/images";
+// import colors from "@/assets/crayola.json";
+// import cardA from "@/images";
 
 export default {
-  data() {
-    return { colors, imageArray };
-  },
+  // data() {
+  //   return { colors, imageArray };
+  // },
   props: {
-    bgColorAndImage: Object,
+    card: Object,
+    language: Number,
   },
   methods: {
     backToPanelView() {
