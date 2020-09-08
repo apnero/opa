@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id='app'>
     <v-main>
       <MainScreen />
     </v-main>
@@ -21,3 +21,15 @@ export default {
   }),
 };
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+
+html, body, h6 {
+font-family: 'Almarai', sans-serif;
+}
+
+#app {
+font-family: 'Almarai', sans-serif;
+}
+</style>

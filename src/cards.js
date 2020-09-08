@@ -56,14 +56,4 @@ export default [
     text: ["Logo", "Port Logo", "Spanish Logo"],
     color: colors[Math.floor(Math.random() * colors.length)].hex,
   },
-  {
-    image: image2,
-    text: ["All Products", "Port All Products", "Spanish All Products"],
-    color: colors[Math.floor(Math.random() * colors.length)].hex,
-  },
-  {
-    image: image2,
-    text: ["Links", "Port Links", "Spanish Links"],
-    color: colors[Math.floor(Math.random() * colors.length)].hex,
-  },
 ];

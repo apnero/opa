@@ -2,7 +2,7 @@
   <v-container fluid class="pa-0">
     <v-app-bar app
       fixed
-      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+      src="@/assets/images/titlebar.png"
       prominent
       dark
       shrink-on-scroll
@@ -26,8 +26,8 @@
     <v-navigation-drawer
       v-model="drawer"
       fixed
-      dark
-      src="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
+      
+      src="@/assets/images/navigationbar.png"
       temporary
     >
       <v-list
@@ -38,11 +38,7 @@
           v-model="group"
           active-class="deep-purple--text text--accent-4"
         >
-          <v-list-item class="px-2">
-            <v-list-item-avatar>
-              <v-img src="https://randomuser.me/api/portraits/women/75.jpg"></v-img>
-            </v-list-item-avatar>
-          </v-list-item>
+
 <v-subheader>REPORTS</v-subheader>
           <v-list-item>
             <v-list-item-icon>
