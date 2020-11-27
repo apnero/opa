@@ -10,10 +10,10 @@
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <!-- <v-toolbar-title>OPA Marketing</v-toolbar-title> -->
       <v-spacer></v-spacer>
-      <v-btn icon>
+      <v-btn href="https://www.facebook.com/opamarketing" icon>
         <v-icon>mdi-facebook</v-icon>
       </v-btn>
-      <v-btn href="https://instagram.com/nai_brito_ct" icon>
+      <v-btn href="https://instagram.com/opamarketingusa" icon>
         <v-icon>mdi-instagram</v-icon>
       </v-btn>
       <v-btn icon href="sms:+14752189321">
