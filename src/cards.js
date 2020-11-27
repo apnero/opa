@@ -7,7 +7,7 @@ export default [
   {
     image: image1,
     text: [
-      "Vehicle GraphicsTemp",
+      "Vehicle Graphics",
       "Port Vehicle Graphics",
       "Spanish Vehicle Graphics",
     ],
