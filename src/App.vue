@@ -23,13 +23,17 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap'); */
 
-html, body, h6 {
-font-family: 'Almarai', sans-serif;
+html, body, h1 {
+font-family: 'Six Caps', sans-serif;
+}
+.v-application {
+  font-family: 'Six Caps', sans-serif;
+
 }
 
 #app {
-font-family: 'Almarai', sans-serif;
+font-family: 'Six Caps', sans-serif;
 }
 </style>

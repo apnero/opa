@@ -49,7 +49,6 @@
 
 <script>
 import { Howl } from "howler";
-// import colors from "@/assets/crayola.json";
 import bgArray from "@/bgs";
 import cardArray from "@/cards";
 import soundArray from "@/sounds";
@@ -72,16 +71,6 @@ export default {
   components: {
     Page,
   },
-  // beforeMount() {
-  //   // eslint-disable-next-line no-unused-vars
-  //   for (let i = 0; i < this.imageArray.length; i++) {
-  //     this.cardArray.push({
-  //       color: colors[Math.floor(Math.random() * colors.length)].hex,
-  //       imageObj: imageArray[num],
-  //     });
-  //   }
-  //   console.log(this.cardArray);
-  // },
   methods: {
     playSound() {
       const sound = new Howl({
@@ -94,21 +83,12 @@ export default {
     //   this.cardArray[num].color = color;
     //   return color
     // },
-    // getImage(num) {
-    //   return this.cardArray[num].image;
-    // },
-    // getText(num) {
-    //   return this.cardArray[num].text;
-    // },
-    // getColor(num) {
-    //   return this.cardArray[num].color;
-    // },
     openPanel(card) {
-      // console.log(JSON.stringify(this.cardArray[num]));
-      // this.imageNum = num;
       this.currentCard = card;
       this.pageView = true;
     },
   },
 };
 </script>
+
+
